@@ -1,0 +1,71 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 3rem;
+    min-height: 42rem;
+    max-height: 160rem;
+    color: white;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.bodyBotones {
+    
+    height: 100%;
+    
+    background-image: linear-gradient(
+  40deg,
+  hsl(10deg 15% 53%) 0%,
+  hsl(3deg 16% 54%) 6%,
+  hsl(357deg 16% 55%) 13%,
+  hsl(351deg 17% 55%) 19%,
+  hsl(345deg 17% 56%) 25%,
+  hsl(332deg 16% 55%) 31%,
+  hsl(322deg 14% 53%) 37%,
+  hsl(310deg 12% 51%) 44%,
+  hsl(298deg 10% 50%) 50%,
+  hsl(278deg 20% 46%) 56%,
+  hsl(257deg 31% 43%) 63%,
+  hsl(236deg 41% 39%) 69%,
+  hsl(216deg 51% 35%) 75%,
+  hsl(223deg 43% 40%) 81%,
+  hsl(231deg 33% 44%) 87%,
+  hsl(238deg 24% 48%) 94%,
+  hsl(246deg 15% 53%) 100%
+);
+}
+
+
+.card-home {
+    height: 10rem;
+    width: 11rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 1rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:1600px) {
+    .home {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .home {
+        gap: 2rem; 
+    }
+
+    .card-home {
+        margin: 0.5rem; 
+    }
+}

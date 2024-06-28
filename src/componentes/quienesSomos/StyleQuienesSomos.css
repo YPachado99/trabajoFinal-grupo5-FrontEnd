@@ -1,0 +1,122 @@
+:root {
+  --primer-color: #997a74;
+  --segundo-color: #a37c86;
+  --tercer-color: #bb72bc;
+  --cuarto-color: #2c51bb;
+  --quinto-color: #787499;
+  --sexto-color: #f6f6f6;
+}
+
+.container-nosotros {
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 90rem;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+.titulo-nosotros {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--sexto-color);
+  font-size: 3rem;
+}
+
+.nosotros-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nosotros-card {
+  width: 100%;
+  max-width: 22rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--sexto-color);
+  border-radius: 2rem;
+  padding: 0.5rem;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.nosotros-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nosotros-name {
+  font-size: 1.6rem;
+  color: black;
+}
+
+.nosotros-card .img-fluid {
+  width: 15rem;
+  height: 15rem;
+  margin-top: 1rem;
+  border-radius: 20%;
+  box-shadow: 0 0.3rem 0.5rem var(--quinto-color);
+  object-fit: cover;
+}
+
+.nosotros-links {
+  margin-top: 1rem;
+}
+
+.nosotros-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: var(--tercer-color);
+  height: 1.5rem;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.nosotros-icon:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .container-nosotros {
+    padding: 1rem;
+  }
+  
+  .titulo-nosotros {
+    font-size: 2.5rem;
+  }
+
+  .nosotros-card {
+    max-width: calc(50% - 0.5rem);
+  }
+
+  .nosotros-card .img-fluid {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-nosotros {
+    font-size: 2rem;
+  }
+
+  .nosotros-card {
+    max-width: 100%;
+  }
+
+  .nosotros-card .img-fluid {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .nosotros-icon {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+  }
+}
