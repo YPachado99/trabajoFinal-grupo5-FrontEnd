@@ -12,7 +12,7 @@ const UserContext = ({ children }) => {
   const getUsers = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3000/api/user/usuarios"
+        "https://back-codestockers.vercel.app/api/user/usuarios"
       );
       console.log(response);
       setUsers(response.data);
@@ -23,7 +23,7 @@ const UserContext = ({ children }) => {
 
   const login = async (mail, contraseña) => {
     //console.log(mail, contraseña, "login Context");
-    const response = await axios.post("http://localhost:3000/api/user/login", {
+    const response = await axios.post("https://back-codestockers.vercel.app/api/user/login", {
       mail,
       contraseña,
     });
@@ -60,7 +60,7 @@ const UserContext = ({ children }) => {
   const postUsuario = async (user) => {
     try {
       let response = await axios.post(
-        "http://localhost:3000/api/user/register",
+        "https://back-codestockers.vercel.app/api/user/register",
         user
       );
       console.log(response);
@@ -74,7 +74,7 @@ const UserContext = ({ children }) => {
   const deleteUsuario = async (_id) => {
     console.log(_id, "deleteUsuario");
     try {
-      await axios.delete(`http://localhost:3000/api/user/usuarios/${_id}`);
+      await axios.delete(`https://back-codestockers.vercel.app/api/user/usuarios/${_id}`);
       window.location.reload();
     } catch (error) {
       console.log(error);
@@ -85,7 +85,7 @@ const UserContext = ({ children }) => {
     console.log(updatedUsuario, "este es el user");
     try {
       await axios.put(
-        `http://localhost:3000/user/usuarios/${updatedUsuario._id}`,
+        `https://back-codestockers.vercel.app/user/usuarios/${updatedUsuario._id}`,
         updatedUsuario
       );
       const newUsuarios = usuario.map((usuario) =>

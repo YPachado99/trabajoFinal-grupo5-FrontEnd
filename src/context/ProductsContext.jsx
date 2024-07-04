@@ -9,7 +9,7 @@ const ProductsContext = ({ children }) => {
 
   const getProductos = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/api/productos");
+      const response = await axios.get("https://back-codestockers.vercel.app/api/productos");
       console.log(response);
       setProductos(response.data);
     } catch (error) {
@@ -20,7 +20,7 @@ const ProductsContext = ({ children }) => {
   const postProducto = async (producto) => {
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/productos",
+        "https://back-codestockers.vercel.app/api/productos",
         producto
       );
       console.log(response);
@@ -33,7 +33,7 @@ const ProductsContext = ({ children }) => {
 
   const deleteProducto = async (_id) => {
     try {
-      await axios.delete(`http://localhost:3000/api/productos/${_id}`);
+      await axios.delete(`https://back-codestockers.vercel.app/api/productos/${_id}`);
       window.location.reload();
     } catch (error) {
       console.log(error);
@@ -44,7 +44,7 @@ const ProductsContext = ({ children }) => {
     console.log(updatedProducto, "updateProducto");
     try {
       await axios.put(
-        `http://localhost:3000/api/productos/${updatedProducto._id}`,
+        `https://back-codestockers.vercel.app/api/productos/${updatedProducto._id}`,
         updatedProducto
       );
       const newProductos = productos.map((producto) =>

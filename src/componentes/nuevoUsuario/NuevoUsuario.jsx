@@ -85,7 +85,7 @@ export default function NuevoUsuario() {
 
     try {
       const response = axios.post(
-        "http://localhost:3000/api/user/register",
+        "https://back-codestockers.vercel.app/api/user/register",
         dataUser
       );
       console.log(response);
