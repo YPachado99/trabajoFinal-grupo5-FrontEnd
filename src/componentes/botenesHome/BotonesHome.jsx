@@ -15,35 +15,35 @@ const BotonesHome = () => {
             <section className="home row ">
             <article className='card-home col-md-4'>
               <a href="/almacen">
-                <img src="../public/img/almacen.png" alt="" />
+                <img src="src/assets/img/almacen.png" alt="" />
               </a>
                 <span>Almacen</span>
               </article>
 
               <article className='card-home col-md-4'>
               <a href="">
-                <img src="../public/img/venta.png" alt="" />
+                <img src="src/assets/img/venta.png" alt="" />
               </a>
                 <span>Ventas</span>
               </article>
 
               <article className='card-home col-md-4'>
               <a href="">
-                <img src="../public/img/controlinventario.png" alt="" />
+                <img src="src/assets/img/controlinventario.png" alt="" />
               </a>
                 <span>Gestion Proveedores</span>
               </article>
 
               <article className='card-home'>
               <a href="">
-                <img src="../public/img/gestionpedidos.png" alt="" />
+                <img src="src/assets/img/gestionpedidos.png" alt="" />
               </a>
               <span>Pedidos</span>
               </article>
           
               <article className='card-home'>
               <a href="">
-                <img src="../public/img/informes.png" alt="" />
+                <img src="src/assets/img/informes.png" alt="" />
               </a>
               <span>Informe y Analisis</span>
               </article>
@@ -52,7 +52,7 @@ const BotonesHome = () => {
 
               <article className='card-home '>
               <a href="/users">
-                <img src="../public/img/controlusuarios.png" alt="" />
+                <img src="src/assets/img/controlusuarios.png" alt="" />
               </a>
               <span>Control Usuarios</span>
               </article>
@@ -66,14 +66,14 @@ const BotonesHome = () => {
             <section className="home row ">
             <article className='card-home col-md-4'>
               <a href="/almacen">
-                <img src="../public/img/almacen.png" alt="" />
+                <img src="src/assets/img/almacen.png" alt="" />
               </a>
                 <span>Almacen</span>
               </article>
 
               <article className='card-home col-md-4'>
               <a href="">
-                <img src="../public/img/venta.png" alt="" />
+                <img src="src/assets/img/venta.png" alt="" />
               </a>
                 <span>Ventas</span>
               </article>
@@ -82,14 +82,14 @@ const BotonesHome = () => {
 
               <article className='card-home'>
               <a href="">
-                <img src="../public/img/gestionpedidos.png" alt="" />
+                <img src="src/assets/img/gestionpedidos.png" alt="" />
               </a>
               <span>Pedidos</span>
               </article>
           
               <article className='card-home'>
               <a href="">
-                <img src="../public/img/informes.png" alt="" />
+                <img src="src/assets/img/informes.png" alt="" />
               </a>
               <span>Informe y Analisis</span>
               </article>
