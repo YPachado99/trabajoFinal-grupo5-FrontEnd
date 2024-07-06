@@ -6,6 +6,12 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import "./StyleQuienesSomos.css";
+import Yonathan from "./public/img/Yonathan.jpg"
+import leandro from "./public/img/leandro.jpeg"
+import esteban from "./public/img/esteban.jpeg"
+import ricardo from "./public/img/ricardo.jpeg"
+import nahuel from "./public/img/nahuel.jpeg"
+import luis from "./public/img/luis.jpeg"
 import {
   MDBBtn,
   MDBCard,
@@ -23,7 +29,7 @@ const data = [
       "https://www.linkedin.com/in/leandro-federico-garc%C3%ADa-27015a20a/",
     github: "https://github.com/leandrogarcia1",
     instagram: "https://www.instagram.com/leandrogarcia1/",
-    image: "public/img/leandro.jpeg",
+    image: {leandro},
   },
   {
     id: 2,
@@ -32,7 +38,7 @@ const data = [
       "https://www.linkedin.com/in/esteban-maximiliano-samaniego-33b4a3263/",
     github: "https://github.com/MaxiSama12",
     instagram: "https://www.instagram.com/estebannn_______/",
-    image: "public/img/esteban.jpeg",
+    image: {esteban},
   },
   {
     id: 3,
@@ -40,7 +46,7 @@ const data = [
     linkedin: "https://www.linkedin.com/in/yonathan-pachado/",
     github: "https://github.com/YPachado99",
     instagram: "https://www.instagram.com/ypachado99/",
-    image: "public/img/Yonathan.jpg",
+    image: {Yonathan},
   },
   {
     id: 4,
@@ -56,7 +62,7 @@ const data = [
     linkedin: "https://www.linkedin.com/in/persona3/",
     github: "https://github.com/LHContreras",
     instagram: "https://www.instagram.com/lhcontreras13/",
-    image: "public/img/luis.jpeg",
+    image: {luis},
   },
   {
     id: 6,
@@ -65,7 +71,7 @@ const data = [
     github: "https://github.com/hermanito135",
     instagram:
       "https://instagram.com/itzhermanito135?utm_source=qr&igshid=ZGUzMzM3NWJiOQ%3D%3D",
-    image: "public/img/nahuel.jpeg",
+    image: {nahuel},
   },
 ];
 
@@ -133,30 +139,6 @@ const QuienesSomos = () => {
         </div>
       </div>
     </div>
-    /*
-<div className="container-nosotros" >
-        <h1 className="titulo-nosotros">Quiénes Somos</h1>
-        <div className="nosotros-cards">
-            {data.map((person) => (
-            <div key={person.id} className="nosotros-card">
-                <img className="nosotros-image" src={person.image} alt={person.name} />
-                <h2>{person.name}</h2>
-                <div className="nosotros-links">
-                    <a href={person.linkedin} target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon className="nosotros-icon" icon={faLinkedin} />
-                    </a>
-                    <a href={person.github} target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon className="nosotros-icon" icon={faGithub} />
-                    </a>
-                    <a href={person.instagram} target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon className="nosotros-icon" icon={faInstagram} />
-                    </a>
-                </div>
-            </div>))}
-        </div>
-    </div>
-       
-    */
   );
 };
 
