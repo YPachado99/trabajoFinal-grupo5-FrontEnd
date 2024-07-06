@@ -9,6 +9,7 @@ import {
 } from "mdb-react-ui-kit";
 import { Col, Container, Row } from "react-bootstrap";
 import Swal from "sweetalert2";
+import registro from "../../assets/img/registro.png"
 
 export default function NuevoUsuario() {
   const [dataUser, setDataUser] = useState({
@@ -109,7 +110,7 @@ export default function NuevoUsuario() {
       <Container>
         <Row>
           <Col md="6" className="d-none d-md-block">
-            <img src="../public/img/registro.png" alt="" />
+            <img src={registro} alt="" />
           </Col>
 
           <Col md="6">

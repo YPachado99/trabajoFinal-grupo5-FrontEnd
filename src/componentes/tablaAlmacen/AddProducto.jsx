@@ -15,7 +15,7 @@ export default function AddProducto() {
   const { postProducto } = useContext(ProductosContext);
 
   const [productos, setProductos] = useState({
-    img: "https://picsum.photos/200/300",
+    img: "https://picsum.photos/200/300?random",
     producto: "",
     deposito: "",
     stockMinimo: 0,
@@ -60,10 +60,10 @@ export default function AddProducto() {
         timer: 1500,
       });
       setProductos({
-        img: "https://picsum.photos/200/300",
+        img: "https://picsum.photos/200/300?random",
         producto: "",
         deposito: "",
-        stockMinimo: 0,
+        stockMinimo: 1,
         categoria: "",
         stock: 0,
         fechaControl: "",
