@@ -6,12 +6,13 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import "./StyleQuienesSomos.css";
-import yonathan from "./public/img/yonathan.png"
-import leandro from "./public/img/leandro.jpeg"
-import esteban from "./public/img/esteban.jpeg"
-import ricardo from "./public/img/ricardo.jpeg"
-import nahuel from "./public/img/nahuel.jpeg"
-import luis from "./public/img/luis.jpeg"
+import yonathan from "../../assets/img/yonathan.jpg";
+import leandro from "../../assets/img/leandro.jpeg";
+import esteban from "../../assets/img/esteban.jpeg";
+import ricardo from "../../assets/img/ricardo.jpeg";
+import nahuel from "../../assets/img/nahuel.jpeg";
+import luis from "../../assets/img/luis.jpeg";
+
 import {
   MDBBtn,
   MDBCard,

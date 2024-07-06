@@ -1,11 +1,11 @@
 import "./styleBotenesHome.css"
 import React from 'react';
-import almacen from "./public/img/almacen.png"
-import venta from "./public/img/venta.png"
-import inventario from "./public/img/controlinventario.png"
-import pedidos from "./public/img/gestionpedidos.png"
-import informes from "./public/img/informes.png"
-import usuarios from "./public/img/controlusuarios.png"
+import almacen from "../../assets/img/almacen.png"
+import venta from "../../assets/img/venta.png"
+import inventario from "../../assets/img/controlinventario.png"
+import pedidos from "../../assets/img/gestionpedidos.png"
+import informes from "../../assets/img/informes.png"
+import usuarios from "../../assets/img/controlusuarios.png"
 
 const usuarioLogueado=JSON.parse(localStorage.getItem("user"))
 
