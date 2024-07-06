@@ -6,7 +6,7 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import "./StyleQuienesSomos.css";
-import Yonathan from "./public/img/Yonathan.jpg"
+import yonathan from "./public/img/yonathan.png"
 import leandro from "./public/img/leandro.jpeg"
 import esteban from "./public/img/esteban.jpeg"
 import ricardo from "./public/img/ricardo.jpeg"
@@ -29,7 +29,7 @@ const data = [
       "https://www.linkedin.com/in/leandro-federico-garc%C3%ADa-27015a20a/",
     github: "https://github.com/leandrogarcia1",
     instagram: "https://www.instagram.com/leandrogarcia1/",
-    image: {leandro},
+    image: leandro,
   },
   {
     id: 2,
@@ -38,7 +38,7 @@ const data = [
       "https://www.linkedin.com/in/esteban-maximiliano-samaniego-33b4a3263/",
     github: "https://github.com/MaxiSama12",
     instagram: "https://www.instagram.com/estebannn_______/",
-    image: {esteban},
+    image: esteban,
   },
   {
     id: 3,
@@ -46,7 +46,7 @@ const data = [
     linkedin: "https://www.linkedin.com/in/yonathan-pachado/",
     github: "https://github.com/YPachado99",
     instagram: "https://www.instagram.com/ypachado99/",
-    image: {Yonathan},
+    image: yonathan,
   },
   {
     id: 4,
@@ -54,7 +54,7 @@ const data = [
     linkedin: "https://www.linkedin.com/in/franco-ricardo-silva-71048421b/",
     github: "https://github.com/ricardosilv1",
     instagram: "https://www.instagram.com/ricardosilv1/",
-    image: "public/img/ricardo.jpeg",
+    image: ricardo,
   },
   {
     id: 5,
@@ -62,7 +62,7 @@ const data = [
     linkedin: "https://www.linkedin.com/in/persona3/",
     github: "https://github.com/LHContreras",
     instagram: "https://www.instagram.com/lhcontreras13/",
-    image: {luis},
+    image: luis,
   },
   {
     id: 6,
@@ -71,7 +71,7 @@ const data = [
     github: "https://github.com/hermanito135",
     instagram:
       "https://instagram.com/itzhermanito135?utm_source=qr&igshid=ZGUzMzM3NWJiOQ%3D%3D",
-    image: {nahuel},
+    image: nahuel,
   },
 ];
 
