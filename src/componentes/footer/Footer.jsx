@@ -16,12 +16,14 @@ export default function Footer() {
       <MDBContainer className='p-4'>
         <MDBRow>
           <MDBCol lg='6' md='12' className='mb-4 mb-md-0'>
+          <a href="/home">
           <img
           src={logo}
           className='img-fluid rounded'
           alt='Logo Code Stockers '
           style={{ width: '15%' }} 
-        />
+          />
+          </a>
           </MDBCol>
 
           <MDBCol lg='6' md='12' className='mb-4 mb-md-0'>
