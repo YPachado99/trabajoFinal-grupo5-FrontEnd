@@ -1,9 +1,12 @@
 import React, { useState, useContext } from "react";
-import { 
-  MDBRow, 
-  MDBCol, 
-  MDBInput, 
-  MDBBtn } from "mdb-react-ui-kit";
+
+import {
+  MDBRow,
+  MDBCol,
+  MDBInput,
+  MDBCheckbox,
+  MDBBtn,
+} from "mdb-react-ui-kit";
 import { Col, Container, Row } from "react-bootstrap";
 import { ProductosContext } from "../../context/ProductsContext";
 import Swal from "sweetalert2";
@@ -24,29 +27,28 @@ export default function AddProducto() {
   });
 
   const handleChange = (e) => {
-    setProductos({ ...productos, [e.target.name]: e.target.value });
+    setProductos({ ...productos, [e.target.name]: e.target.value }); //actualizo el estaco con el valor del input
   };
 
-  const handleSubmit = (e) => {
+  const handleSudmit = (e) => {
     e.preventDefault();
     // Verificar campos obligatorios
-    if (
-      !productos.img ||
-      !productos.producto ||
-      !productos.deposito ||
-      productos.stockMinimo === 0 ||
-      !productos.categoria ||
-      productos.stock === 0 ||
-      !productos.fechaControl ||
-      productos.precio < 0
-    ) {
-      Swal.fire({
-        icon: "error",
-        title: "Error",
-        text: "Faltan completar algunos campos obligatorios o el precio es negativo.",
-      });
-      return;
-    }
+  if (
+    !productos.img ||
+    !productos.producto ||
+    !productos.deposito ||
+    productos.stockMinimo === 0 ||
+    !productos.categoria ||
+    productos.stock === 0 ||
+    !productos.fechaControl
+  ) {
+    Swal.fire({
+      icon: "error",
+      title: "Error",
+      text: "Faltan completar algunos campos obligatorios",
+    });
+    return; // Detener el envío si hay campos obligatorios faltantes
+  }
 
     try {
       postProducto(productos);
@@ -69,21 +71,16 @@ export default function AddProducto() {
         nota: "",
       });
     } catch (error) {
-      Swal.fire({
-        icon: "error",
-        title: "Error",
-        text: "Hubo un problema al agregar el producto. Inténtalo nuevamente.",
-      });
       console.log(error);
     }
-  };
+  }; //envio los datos a mi fake api
 
   return (
     <>
       <Container>
         <Row>
           <Col md="6" className="mx-auto text-center">
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSudmit}>
               <MDBRow className="mb-4">
                 <MDBCol>
                   <MDBInput
@@ -160,7 +157,7 @@ export default function AddProducto() {
               </MDBRow>
 
               <MDBInput
-                wrapperClass="mb-4"
+                wrapperClass="mb-4 "
                 value={productos.nota}
                 onChange={handleChange}
                 name="nota"
