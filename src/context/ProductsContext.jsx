@@ -41,7 +41,7 @@ const ProductsContext = ({ children }) => {
   };
 
   const updateProducto = async (updatedProducto) => {
-    console.log(updatedProducto, "updateProducto");
+    //console.log(updatedProducto, "updateProducto");
     try {
       await axios.put(
         `https://back-codestockers.vercel.app/api/productos/${updatedProducto._id}`,
@@ -61,7 +61,7 @@ const ProductsContext = ({ children }) => {
     getProductos();
   }, []);
 
-  console.log(productos, "---desde context");
+  //console.log(productos, "---desde context");
   return (
     <ProductosContext.Provider
       value={{

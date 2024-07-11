@@ -27,8 +27,8 @@ export default function Registro() {
   const [contraseña, setContraseña] = useState("");
 
   const { users, login } = useContext(UsuariosContext);
-  console.log(users, "users");
-  console.log(mail, contraseña, "usemail y pasworders");
+  //console.log(users, "users");
+  //console.log(mail, contraseña, "usemail y pasworders");
 
   const handleSubmit = (e) => {
     e.preventDefault();

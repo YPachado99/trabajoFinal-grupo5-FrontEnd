@@ -27,7 +27,7 @@ const UserContext = ({ children }) => {
       mail,
       contraseña,
     });
-    //console.log(response);
+    console.log(response);
 
     const jwtToken = response.data.data.token;
     const jwtDecode = jwt_decode(jwtToken);
@@ -48,7 +48,7 @@ const UserContext = ({ children }) => {
 
     localStorage.setItem("user", JSON.stringify(user));
     setUserLogueado(user);
-    console.log(user);
+    //console.log(user);
 
     if (user.role === "admin") {
       window.location.href = "/home";
@@ -72,7 +72,7 @@ const UserContext = ({ children }) => {
     }
   };
   const deleteUsuario = async (_id) => {
-    console.log(_id, "deleteUsuario");
+    //console.log(_id, "deleteUsuario");
     try {
       await axios.delete(`https://back-codestockers.vercel.app/api/user/usuarios/${_id}`);
       window.location.reload();
@@ -82,7 +82,7 @@ const UserContext = ({ children }) => {
   };
 
   const updateUser = async (updatedUsuario) => {
-    console.log(updatedUsuario, "este es el user");
+    //console.log(updatedUsuario, "este es el user");
     try {
       await axios.put(
         `https://back-codestockers.vercel.app/user/usuarios/${updatedUsuario._id}`,
