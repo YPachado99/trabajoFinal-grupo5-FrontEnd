@@ -8,7 +8,6 @@ import {
   MDBIcon,
 } from "mdb-react-ui-kit";
 import { UsuariosContext } from "../../context/UserContext";
-import Swal from "sweetalert2";
 import { Modal } from "react-bootstrap";
 import FormUpdateUsers from "./FormUpdateUsers";
 
@@ -30,13 +29,6 @@ export default function TablaUsuarios() {
 
   const handleDelete = (_id) => {
     deleteUsuario(_id);
-
-    Swal.fire({
-      icon: "success",
-      title: "Usuario Eliminado",
-      showConfirmButton: false,
-      timer: 1500,
-    });
   };
 
   return (
