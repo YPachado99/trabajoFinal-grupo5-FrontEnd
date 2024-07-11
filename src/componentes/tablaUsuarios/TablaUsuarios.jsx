@@ -47,7 +47,6 @@ export default function TablaUsuarios() {
             <tr>
               <th scope="col">Nombre</th>
               <th scope="col">Puesto</th>
-              <th scope="col">Contraseña</th>
               <th scope="col">Telefono</th>
               <th scope="col">Modificar</th>
               <th scope="col">Eliminar</th>
@@ -84,7 +83,6 @@ export default function TablaUsuarios() {
                       Usuario Adm: {user.usuarioAdm}
                     </p>
                   </td>
-                  <td>{user.contraseña}</td>
                   <td>{user.telefono}</td>
                   <td>
                     <MDBBtn

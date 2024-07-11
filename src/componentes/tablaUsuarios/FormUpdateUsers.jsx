@@ -117,7 +117,6 @@ const FormUpdateUsers = ({ editUser, handleClose }) => {
                 <input
                   type="text"
                   className="form-control"
-                  value={user.contraseña}
                   onChange={handleChange}
                   name="contraseña"
                   aria-describedby="contraseña"
