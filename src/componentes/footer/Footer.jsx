@@ -55,13 +55,6 @@ export default function Footer() {
 
         </MDBRow>
       </MDBContainer>
-
-      <div className='text-center p-3' style={{ backgroundColor: '#000000', color: '#FFFFFF' }}>
-       <p>
-
-       </p>
-        
-      </div>
     </MDBFooter>
   );
 }
