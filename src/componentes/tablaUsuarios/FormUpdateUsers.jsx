@@ -15,14 +15,25 @@ const FormUpdateUsers = ({ editUser, handleClose }) => {
 
   const handleEdit = (e) => {
     e.preventDefault();
-    updateUser(user);
     Swal.fire({
-      icon: "success",
-      title: "Usuario Editado",
-      showConfirmButton: false,
-      timer: 1500,
+      title: "¿Guardar cambios?",
+      icon: "question",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Sí, guardar!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        updateUser(user);
+        Swal.fire({
+          icon: "success",
+          title: "Usuario Editado",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+        handleClose();
+      }
     });
-    handleClose();
   };
 
   return (
