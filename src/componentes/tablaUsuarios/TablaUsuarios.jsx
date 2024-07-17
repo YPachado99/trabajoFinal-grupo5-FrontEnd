@@ -30,19 +30,8 @@ export default function TablaUsuarios() {
       return;
     }
 
-    Swal.fire({
-      title: "¿Editar usuario?",
-      icon: "question",
-      showCancelButton: true,
-      confirmButtonColor: "#3085d6",
-      cancelButtonColor: "#d33",
-      confirmButtonText: "Sí, editar!",
-    }).then((result) => {
-      if (result.isConfirmed) {
-        setEditUser(user);
-        handleShow();
-      }
-    });
+    setEditUser(user);
+    handleShow();
   };
 
   const handleDelete = (_id, usuarioAdm) => {
@@ -79,6 +68,7 @@ export default function TablaUsuarios() {
       }
     });
   };
+
   return (
     <>
       <div style={{ overflow: "auto", width: "100%", maxHeight: "400px" }}>
@@ -139,7 +129,7 @@ export default function TablaUsuarios() {
                       color="link"
                       rounded
                       size="sm"
-                      onClick={() => handleDelete(user._id)}
+                      onClick={() => handleDelete(user._id, user.usuarioAdm)}
                     >
                       <MDBIcon fas icon="trash" />
                     </MDBBtn>
