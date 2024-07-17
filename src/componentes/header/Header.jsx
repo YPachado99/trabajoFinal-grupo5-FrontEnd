@@ -30,7 +30,7 @@ export default function Header() {
       <MDBCollapse show={showNavExternal}>
         <div className='bg-dark p-4'>
         <MDBNavbarNav>
-            <MDBNavbarLink href='/home' style={{ color: '#FFFFFF' }}>Home</MDBNavbarLink>
+            <MDBNavbarLink href='/home' style={{ color: '#FFFFFF' }}>Inicio</MDBNavbarLink>
             <MDBNavbarLink active aria-current='' href='/almacen' style={{ color: '#FFFFFF' }} >
               Almacen
             </MDBNavbarLink>
@@ -68,7 +68,7 @@ export default function Header() {
       <MDBCollapse show={showNavExternal}>
         <div className='bg-dark p-4'>
         <MDBNavbarNav>
-            <MDBNavbarLink href='/home' style={{ color: '#FFFFFF' }}>Home</MDBNavbarLink>
+            <MDBNavbarLink href='/home' style={{ color: '#FFFFFF' }}>Inicio</MDBNavbarLink>
             <MDBNavbarLink active aria-current='' href='/almacen' style={{ color: '#FFFFFF' }} >
               Almacen
             </MDBNavbarLink>

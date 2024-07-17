@@ -5,6 +5,7 @@ import { MDBRow, MDBCol, MDBInput, MDBBtn } from "mdb-react-ui-kit";
 import { Col, Container, Row } from "react-bootstrap";
 import Swal from "sweetalert2";
 import registro from "../../assets/img/registro.png";
+import { Redirect } from "react-router-dom"; // Importa Redirect desde React Router
 
 export default function NuevoUsuario() {
   const [dataUser, setDataUser] = useState({
@@ -17,9 +18,10 @@ export default function NuevoUsuario() {
     url: "",
     usuarioAdm: "",
   });
+  const [redirectToUsuarios, setRedirectToUsuarios] = useState(false); // Estado para redirigir
 
   const handleChange = (e) => {
-    setDataUser({ ...dataUser, [e.target.name]: e.target.value }); //actualizo el estaco con el valor del input
+    setDataUser({ ...dataUser, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
@@ -101,6 +103,7 @@ export default function NuevoUsuario() {
         url: "",
         usuarioAdm: "",
       });
+      setRedirectToUsuarios(true); // Activar la redirección después de crear el usuario
     } catch (error) {
       Swal.fire({
         icon: "error",
@@ -110,6 +113,10 @@ export default function NuevoUsuario() {
       console.log(error);
     }
   };
+
+  if (redirectToUsuarios) {
+    return <Redirect to="/users" />; // Redirige a la tabla de usuarios
+  }
 
   return (
     <>

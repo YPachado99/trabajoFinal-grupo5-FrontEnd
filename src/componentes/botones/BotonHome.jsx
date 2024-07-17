@@ -8,7 +8,7 @@ const BotonHome = () => {
     <Link to="/home">
         <div className="botonHome">
         <Fragment>
-      <MDBBtn outline color="primary">Volver al Home</MDBBtn>
+      <MDBBtn outline color="primary">Volver al Inicio</MDBBtn>
       
     </Fragment>
         </div>
