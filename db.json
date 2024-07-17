@@ -1,0 +1,213 @@
+{
+  "users": [
+    {
+      "nombre": "Leandro Federico",
+      "apellido": "Garcia",
+      "role": "gentente",
+      "mail": "garcialeandrofede@gmail.com",
+      "contraseña": "leandro123",
+      "telefono": "03816271544",
+      "url": "https://picsum.photos/200/300",
+      "id": 6,
+      "usuarioAdm": "si"
+    },
+    {
+      "nombre": "Sonia del valle",
+      "apellido": "Gomez",
+      "role": "Atencion al cliente",
+      "mail": "SoniaGomez@gmail.com",
+      "contraseña": "Son654",
+      "telefono": "381435434",
+      "url": "https://picsum.photos/200/300",
+      "id": 7,
+      "usuarioAdm": "no"
+    },
+    {
+      "nombre": "sergio",
+      "apellido": "Garcia isla",
+      "role": "contador",
+      "mail": "Sergiogarica@gmail.com",
+      "contraseña": "segi123",
+      "telefono": "2547896554",
+      "url": "https://picsum.photos/200/300",
+      "usuarioAdm": "no",
+      "id": 9,
+      "Adm": "sis",
+      "puesto": "Ingeniro3"
+    },
+    {
+      "nombre": "Daniel",
+      "apellido": "Garcia",
+      "role": "Ingeniro",
+      "mail": "daniGarica@gmail.com",
+      "contraseña": "dani1234`",
+      "telefono": "254789",
+      "url": "https://picsum.photos/200/300",
+      "usuarioAdm": "si",
+      "id": 10
+    },
+    {
+      "nombre": "",
+      "apellido": "",
+      "role": "",
+      "mail": "",
+      "contraseña": "",
+      "telefono": "",
+      "url": "",
+      "usuarioAdm": "",
+      "id": 11
+    },
+    {
+      "nombre": "Leandro Federico",
+      "apellido": "Garcia",
+      "role": "gentente",
+      "mail": "garcialeandrofede@gmail.com",
+      "contraseña": "34522",
+      "telefono": "03816271544",
+      "url": "https://picsum.photos/200/300",
+      "usuarioAdm": "si",
+      "id": 12
+    },
+    {
+      "nombre": "Leandro Federico",
+      "apellido": "Garcia",
+      "role": "gentente",
+      "mail": "pedrocampero@gmail.com",
+      "contraseña": "cddsss",
+      "telefono": "03816271544",
+      "url": "https://picsum.photos/200/300",
+      "usuarioAdm": "si",
+      "id": 13
+    },
+    {
+      "nombre": "Leandro Federico",
+      "apellido": "Garcia",
+      "role": "ayudante",
+      "mail": "pedrocampero@gmail.com",
+      "contraseña": "vfddd",
+      "telefono": "03816271542",
+      "url": "https://picsum.photos/200/300",
+      "usuarioAdm": "si",
+      "id": 14
+    },
+    {
+      "nombre": "Leandro Federico",
+      "apellido": "Garcia",
+      "role": "",
+      "mail": "",
+      "contraseña": "",
+      "telefono": "03816271544",
+      "url": "",
+      "usuarioAdm": "",
+      "id": 15
+    },
+    {
+      "nombre": "Leandro Federico",
+      "apellido": "Garcia",
+      "role": "",
+      "mail": "",
+      "contraseña": "",
+      "telefono": "03816271544",
+      "url": "",
+      "usuarioAdm": "",
+      "id": 16
+    },
+    {
+      "nombre": "Leandro Federico",
+      "apellido": "Garcia",
+      "role": "",
+      "mail": "",
+      "contraseña": "",
+      "telefono": "03816271544",
+      "url": "",
+      "usuarioAdm": "",
+      "id": 17
+    }
+  ],
+  "productos": [
+    {
+      "img": "https://picsum.photos/200/300",
+      "producto": "Notbook php",
+      "deposito": "salta",
+      "stockMinimo": "1",
+      "categoria": "Bebida",
+      "stock": "789",
+      "fechaControl": "18/08/2023",
+      "precio": "5623584",
+      "nota": "nueva",
+      "id": "s40mqfz"
+    },
+    {
+      "img": "https://picsum.photos/200/300",
+      "producto": "Coca 1.5 L",
+      "deposito": "san luis",
+      "stockMinimo": "1",
+      "categoria": "electronica",
+      "stock": "789",
+      "fechaControl": "18/8/208",
+      "precio": "5879966",
+      "nota": "cocas de 1 litro ",
+      "id": "rlgpxp4"
+    },
+    {
+      "img": "https://picsum.photos/200/300",
+      "producto": "hilux ",
+      "deposito": "",
+      "stockMinimo": "1",
+      "categoria": "auto",
+      "stock": "1",
+      "fechaControl": "17/8/208",
+      "precio": "10292939393",
+      "nota": "blanca",
+      "id": "hXs9den"
+    },
+    {
+      "img": "https://picsum.photos/200/300",
+      "producto": "hilux ",
+      "deposito": "",
+      "stockMinimo": "1",
+      "categoria": "auto",
+      "stock": "1",
+      "fechaControl": "18/8/208",
+      "precio": "10292939393",
+      "nota": "nueva",
+      "id": "UHdijae"
+    },
+    {
+      "img": "https://picsum.photos/200/300",
+      "producto": "Notbook ",
+      "deposito": "",
+      "stockMinimo": "25",
+      "categoria": "auto",
+      "stock": "5",
+      "fechaControl": "17/8/208",
+      "precio": "2587",
+      "nota": "nueva",
+      "id": "c1B9Deq"
+    },
+    {
+      "img": "https://picsum.photos/200/300",
+      "producto": "mate",
+      "deposito": "san luis",
+      "stockMinimo": "4",
+      "categoria": "arte",
+      "stock": "89º",
+      "fechaControl": "20/8/2023",
+      "precio": "5879",
+      "nota": "rojos",
+      "id": "jdO4JUj"
+    },
+    {
+      "img": "https://picsum.photos/200/300",
+      "producto": "",
+      "deposito": "",
+      "stockMinimo": "",
+      "categoria": "",
+      "stock": "",
+      "fechaControl": "",
+      "precio": "",
+      "nota": "",
+      "id": "Kbcmy12"
+    }
+  ]
+}
