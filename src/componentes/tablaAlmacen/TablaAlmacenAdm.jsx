@@ -26,20 +26,46 @@ export default function TablaAlmacenAdm() {
   const handleShow = () => setShow(true);
 
   const handleEdit = (producto) => {
-    setEditProducto(producto);
-    handleShow();
+    Swal.fire({
+      title: "¿Estás seguro?",
+      text: "Estás a punto de editar este producto.",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Sí, editar!",
+      cancelButtonText: "Cancelar",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        setEditProducto(producto);
+        handleShow();
+      }
+    });
   };
 
   const handleDelete = (_id) => {
-    deleteProducto(_id);
-
     Swal.fire({
-      icon: "success",
-      title: "Producto Eliminado",
-      showConfirmButton: false,
-      timer: 1500,
+      title: "¿Estás seguro?",
+      text: "¡No podrás revertir esto!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Sí, eliminar!",
+      cancelButtonText: "Cancelar",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        deleteProducto(_id);
+        Swal.fire({
+          icon: "success",
+          title: "Producto Eliminado",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      }
     });
   };
+  
 
   return (
     <>
@@ -93,7 +119,7 @@ export default function TablaAlmacenAdm() {
                       <td>{producto.stock}</td>
                       <td>{producto.fechaControl}</td>
                       <td>
-                        <p className="fw-normal mb-1">$ {producto.precio}</p>
+                        <p className="fw-normal mb-1">${producto.precio}</p>
                       </td>
                       <td>
                         <p className="fw-normal mb-1">{producto.nota}</p>
@@ -184,7 +210,7 @@ export default function TablaAlmacenAdm() {
                       <td>{producto.stock}</td>
                       <td>{producto.fechaControl}</td>
                       <td>
-                        <p className="fw-normal mb-1">$ {producto.precio}</p>
+                        <p className="fw-normal mb-1">${producto.precio}</p>
                       </td>
                       <td>
                         <p className="fw-normal mb-1">{producto.nota}</p>

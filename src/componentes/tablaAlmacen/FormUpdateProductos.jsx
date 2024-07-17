@@ -15,16 +15,29 @@ const FormUpdateProductos = ({ editProducto, handleClose }) => {
 
   const handleEdit = (e) => {
     e.preventDefault();
-    updateProducto(producto);
     Swal.fire({
-      icon: "success",
-      title: "Producto Editado",
-      showConfirmButton: false,
-      timer: 1500,
+      title: "¿Estás seguro?",
+      text: "Estás a punto de guardar los cambios en este producto.",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Sí, guardar!",
+      cancelButtonText: "Cancelar",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        updateProducto(producto);
+        Swal.fire({
+          icon: "success",
+          title: "Producto Editado",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+        handleClose();
+      }
     });
-    handleClose();
   };
-
+  
   return (
     <>
       <Container>
