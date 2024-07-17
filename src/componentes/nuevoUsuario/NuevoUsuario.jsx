@@ -5,7 +5,7 @@ import { MDBRow, MDBCol, MDBInput, MDBBtn } from "mdb-react-ui-kit";
 import { Col, Container, Row } from "react-bootstrap";
 import Swal from "sweetalert2";
 import registro from "../../assets/img/registro.png";
-import { Redirect } from "react-router-dom"; // Importa Redirect desde React Router
+import Redirect from "react-router-dom"; // Importa Redirect desde React Router
 
 export default function NuevoUsuario() {
   const [dataUser, setDataUser] = useState({
