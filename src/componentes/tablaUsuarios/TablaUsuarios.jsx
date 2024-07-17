@@ -13,7 +13,7 @@ import { Modal } from "react-bootstrap";
 import FormUpdateUsers from "./FormUpdateUsers";
 
 export default function TablaUsuarios() {
-  const { users, deleteUsuario, updateUser, userLogueado } = useContext(UsuariosContext);
+  const { users, deleteUsuario } = useContext(UsuariosContext);
   const [editUser, setEditUser] = useState();
   const [show, setShow] = useState(false);
 
@@ -21,29 +21,11 @@ export default function TablaUsuarios() {
   const handleShow = () => setShow(true);
 
   const handleEdit = (user) => {
-    if (!userLogueado || userLogueado.usuarioAdm.toLowerCase() !== "si") {
-      Swal.fire({
-        icon: "error",
-        title: "Acceso Denegado",
-        text: "Solo los administradores pueden editar usuarios.",
-      });
-      return;
-    }
-
     setEditUser(user);
     handleShow();
   };
 
   const handleDelete = (_id, usuarioAdm) => {
-    if (!userLogueado || userLogueado.usuarioAdm.toLowerCase() !== "si") {
-      Swal.fire({
-        icon: "error",
-        title: "Acceso Denegado",
-        text: "Solo los administradores pueden eliminar usuarios.",
-      });
-      return;
-    }
-
     if (usuarioAdm.toLowerCase() === "si") {
       Swal.fire({
         icon: "error",
